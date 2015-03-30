@@ -1,0 +1,36 @@
+ h3, label {
+	color: #F0F0F0 ;
+}
+
+.panel {
+	background-color: #FF0000 ;
+}
+
+.btn-primary{
+	background-color: #C00000 ;
+	color: #F0F0F0 ;
+}
+
+.btn-default{
+	background-color: rgb(254,225,214) ;
+
+}
+
+.panel-heading {
+	background-color: #A80000 !important;
+}
+
+.list-group-item {
+	background-color: rgb(254,225,214) !important;
+}
+
+.glyphicon-ok {
+	color: green;
+}
+.glyphicon-plus {
+	color: orange;
+}
+.glyphicon-remove {
+	color: red;
+}
+
