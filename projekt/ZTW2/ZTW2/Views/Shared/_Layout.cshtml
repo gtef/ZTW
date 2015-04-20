@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8>
+		<meta http-equiv=" x-ua-compatibile" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ząrzdzanie projektem</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/wlasne/wlasne.css">
+
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/resopnd.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="container">
+
+        <div class="page-header">
+            <h1>
+                <img src="~/Images/brand.png" alt="logo">
+                Tu są twoje projekty
+            </h1>
+        </div>
+
+        <br>
+        <br>
+
+        @RenderBody()
+
+    </div>
+
+    <script src="js/jquery-1.11.2.js"></script>
+    <script src="bootstrap.js"></script>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

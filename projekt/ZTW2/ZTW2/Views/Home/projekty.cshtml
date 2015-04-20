@@ -1,0 +1,102 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<br>
+<h2>Wybierz projekt</h2>
+<br>
+<!--twoje projekty-->
+<div class="panel panel-default ">
+    <div class="panel-heading">
+        <h3>Projekty grupy</h3>
+    </div>
+    <div class="panel-body" id="panel">
+        <div class="list-group">
+            <a href="milicz" class="list-group-item">
+                <h4 class="list-group-item-heading">Akcja Milicz</h4>
+                <p class="list-group-item-text">Szybki wypad nad stawy milickie.</p>
+                <div class="row">
+                    <p class="list-group-item-text col-xs-2"><small>Data: 03.05.2015</small></p>
+                    <p class="list-group-item-text col-xs-2"><small>Liczba uczestników: 3/15</small></p>
+                </div>
+            </a>
+        </div>
+
+        <div class="list-group">
+            <a href="#" class="list-group-item">
+                <h4 class="list-group-item-heading">Grzybobranie na śniadanie</h4>
+                <p class="list-group-item-text">Zbieranie grzybów w Parku Tysiąclecia</p>
+                <div class="row">
+                    <p class="list-group-item-text col-xs-2"><small>Data: 15.09.2015</small></p>
+                    <p class="list-group-item-text col-xs-2"><small>Liczba uczestników: 0/15</small></p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<button type="button" id="myBtn" class="btn btn-default btn-lg">
+    <span class="glyphicon glyphicon-plus"></span> Dodaj
+</button>
+
+
+<script>
+    function add(){
+        var para = document.createElement("div");
+        para.className = "list-group";
+        para.innerHTML += "<a href=\"milicz\" class=\"list-group-item\"> ";
+        para.innerHTML += "<h4 class=\"list-group-item-heading\">Akcja Milicz</h4> ";
+        para.innerHTML += "   <p class=\"list-group-item-text\">Szybki wypad nad stawy milickie.</p> ";
+        para.innerHTML += "   <div class=\"row\"> ";
+        para.innerHTML += "       <p class=\"list-group-item-text col-xs-2\"><small>Data: 03.05.2015</small></p> ";
+        para.innerHTML += "       <p class=\"list-group-item-text col-xs-2\"><small>Liczba uczestników: 3/15</small></p> ";
+        para.innerHTML += "   </div> ";
+        para.innerHTML += "</a>";
+        //para.className = "list-group";
+        //para.innerText = "gowno";
+
+        /*var div = document.createElement("div");
+        div.className = "list-group";
+
+        var a = document.createElement("a");
+        a.className = "list-group-item";
+        a.setAttribute("href","#");
+
+        var h4 = document.createElement("h4");
+        h4.className = "list-group-item-heading";
+        h4.innerText = "Grzybobranie na śniadanie";
+
+        var p = document.createElement("p");
+        p.className = "list-group-item-text";
+        p.innerText = "Zbieranie grzybów w Parku Tysiąclecia";
+
+        var div2 = document.createElement("div");
+        div2.className = "row";
+
+        var p2 = document.createElement("p");
+        p2.className = "list-group-item-text col-xs-2";
+        p2.innerHTML = "<small>Data: 15.09.2015</small>";
+
+        var p3 = document.createElement("p");
+        p3.className = "list-group-item-text col-xs-2";
+        p3.innerHTML = "<small>Liczba uczestników: 0/15</small>";
+
+        div.appendChild(a);
+        a.appendChild(h4);
+        a.appendChild(p);
+        a.appendChild(div);
+        div.appendChild(p2);
+        div.appendChild(p3);*/
+
+        //var node = document.createTextNode("This is new.");
+        //para.appendChild(node);
+
+        var panel = document.getElementById("panel");
+        
+        panel.appendChild(para);
+    }
+
+    document.getElementById("myBtn").addEventListener("click", add);
+
+</script>
